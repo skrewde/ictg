@@ -95,7 +95,7 @@ header #branding {
 #newsletter {
     background: #35424a;
     color: #fff;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
 }
 
 #newsletter h1 {
@@ -173,7 +173,7 @@ header #branding {
     width: 90px;
 }
 
-@media {
+/* @media {
     .container-box {
         align-items: center;
         justify-content: center;
@@ -184,11 +184,22 @@ header #branding {
     }
     
     .box {
-        /* float: left; */
+        /* float: left;
         text-align: center;
         width: 100%;
         padding: 10px;
     }
+} */
+
+/* Sidebar rulesets */
+#main-col {
+    float: left;
+    width: 65%;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
 }
 
 footer {
