@@ -1,19 +1,18 @@
 /* Globals rulesets */
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 
 body {
+    background-color: #f4f4f4;
     font-family: 'Inter', Arial, Helvetica, sans-serif; 
     font-size: 16px;
     padding: 0;
     line-height: 1.5;
     margin: 0;
-    background-color: f4f4f4;
-
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -28,7 +27,7 @@ ol[role='list'] {
 .container {
     margin: auto;
     overflow: hidden;
-    width: 80%;
+    width: 80%;           
 }
 
 nav {
@@ -111,9 +110,18 @@ header #branding {
 #newsletter input[type="email"] {
     border: none;
     border-radius: 2.5px;
+    font: inherit;
+    font-size: 12px;
     height: 25px;
+    margin: 0 10px;
     padding: 5px;
-    width: 250px;
+    width: 250px
+}
+
+#newsletter input:focus {
+    /* outline: none; */
+    outline: 3px solid #e8491d;
+    transition: all 0.25s ease-in-out;
 }
 
 .button1 {
@@ -121,8 +129,10 @@ header #branding {
     border: none;
     border-radius: 2.5px;
     color: #fff;
+    font-family: inherit;
+    font-weight: 600;
     height: 25px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 .button1:hover {
@@ -133,22 +143,14 @@ header #branding {
 
 /* Styling for the boxes */
 #boxes {
-    display: flex;
-    /* margin: 20px 0; */
-    /* flex-wrap: wrap; */
-    align-items: center;
-    justify-content: center;
+    margin: 10px 0 0 0;
 }
 
 .box {
-    background-color: #fff;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
-    /* display: inline-block; */
-    /* padding: calc(10%/3); */
-    text-align: center;
-    /* transition: transform 0.2s, box-shadow 0.2s; */
+    float: left;
     width: 30%;
 }
+
 
 /* Hover animation
 .box:hover {
@@ -157,14 +159,14 @@ header #branding {
 /* } */
 
 .box img {
-    padding: 2.5px;
-    width: 40%;
+    margin-top: 5px;
+    width: 90px;
 }
 
 footer {
 	background-color: #e8491d;
 	color: #fff;
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 20px;
 	text-align: center;
 }
