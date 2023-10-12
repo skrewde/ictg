@@ -28,7 +28,7 @@ ol[role='list'] {
 .container {
     margin: auto;
     overflow: hidden;
-    width: 70%;
+    width: 80%;
 }
 
 nav {
@@ -55,6 +55,7 @@ header a:hover {
     color: #ccc;
     transition: all 0.25s ease-in-out;
 }
+
 /* header ul {
     margin: 0;
     padding: 0;
@@ -130,26 +131,40 @@ header #branding {
     transition: all 0.25s ease-in-out;
 }
 
-/* Styling for the box clqss */
+/* Styling for the boxes */
 #boxes {
-    display: grid;
+    display: flex;
+    /* margin: 20px 0; */
+    /* flex-wrap: wrap; */
+    align-items: center;
     justify-content: center;
 }
 
-
 .box {
-
     background-color: #fff;
-    border-radius: 2.5px;
-
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s; */
-
-    display: inline-block;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+    /* display: inline-block; */
+    /* padding: calc(10%/3); */
+    text-align: center;
+    /* transition: transform 0.2s, box-shadow 0.2s; */
+    width: 30%;
 }
 
-/* Hover animation */
-/* .box:hover {
-    transform: translateY(-5px); /* Raise the card by 5 pixels */
- /*    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); Add a stronger box shadow
-} */
+/* Hover animation
+.box:hover {
+    /* transform: translateY(-5px); /* Raise the card by 5 pixels */
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); Add a stronger box shadow */
+/* } */
+
+.box img {
+    padding: 2.5px;
+    width: 40%;
+}
+
+footer {
+	background-color: #e8491d;
+	color: #fff;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+}
