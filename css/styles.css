@@ -19,16 +19,16 @@ body {
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Non-global rulesets */
 .container {
-    width: 70%;
     margin: auto;
     overflow: hidden;
+    width: 70%;
 }
 
 nav {
@@ -38,17 +38,17 @@ nav {
 
 header {
     background: #35424a;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
     border-bottom: #e8491d 3px solid;
+    color: #fff;
+    min-height: 70px;
+    padding-top: 30px;
 }
 
 header a {
     color: #fff;
+    font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
 }
 
 header a:hover {
@@ -56,8 +56,8 @@ header a:hover {
     transition: all 0.25s ease-in-out;
 }
 /* header ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
 } */
 
 header li {
@@ -76,5 +76,80 @@ header #branding {
 }
 
 #showcase {
-    background: (url) ;
+    background: url(../images/sc.jpg) no-repeat -350px -650px;
+    color: #fff;
+    min-height: 450px;
+    text-align: center;
 }
+
+#showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+#showcase p {
+    font-size: 24;
+}
+
+#newsletter {
+    background: #35424a;
+    color: #fff;
+    padding: 15px;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 25px;
+}
+
+#newsletter input[type="email"] {
+    border: none;
+    border-radius: 2.5px;
+    height: 25px;
+    padding: 5px;
+    width: 250px;
+}
+
+.button1 {
+    background: #e8491d;
+    border: none;
+    border-radius: 2.5px;
+    color: #fff;
+    height: 25px;
+    padding: 0 20px 0 20px;
+}
+
+.button1:hover {
+    background: #c03c18;
+    color: #ccc;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Styling for the box clqss */
+#boxes {
+    display: grid;
+    justify-content: center;
+}
+
+
+.box {
+
+    background-color: #fff;
+    border-radius: 2.5px;
+
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s; */
+
+    display: inline-block;
+}
+
+/* Hover animation */
+/* .box:hover {
+    transform: translateY(-5px); /* Raise the card by 5 pixels */
+ /*    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); Add a stronger box shadow
+} */
