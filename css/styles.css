@@ -114,7 +114,7 @@ header #branding {
     font-size: 12px;
     height: 25px;
     margin: 0 10px;
-    padding: 5px;
+    padding: 0 5px;
     width: 250px
 }
 
@@ -146,9 +146,19 @@ header #branding {
     margin: 10px 0 0 0;
 }
 
+.container-box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
 .box {
-    float: left;
+    /* float: left; */
+    text-align: center;
     width: 30%;
+    padding: 10px;
 }
 
 
@@ -161,6 +171,24 @@ header #branding {
 .box img {
     margin-top: 5px;
     width: 90px;
+}
+
+@media {
+    .container-box {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .box {
+        /* float: left; */
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 footer {
