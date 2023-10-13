@@ -95,7 +95,7 @@ header #branding {
 #newsletter {
     background: #35424a;
     color: #fff;
-    padding: 15px 15px 15px 0;
+    padding: 15px;
 }
 
 #newsletter h1 {
@@ -114,7 +114,7 @@ header #branding {
     font-size: 12px;
     height: 25px;
     margin: 0 10px;
-    padding: 0 5px;
+    padding: 5px;
     width: 250px
 }
 
@@ -142,23 +142,18 @@ header #branding {
 }
 
 /* Styling for the boxes */
-#boxes {
-    margin: 10px 0 0 0;
-}
-
 .container-box {
+    width: 80%;
+    display: flex;
+    margin: auto;
     align-items: center;
     justify-content: center;
-    display: flex;
-    width: 80%;
-    margin: auto;
 }
 
 .box {
-    /* float: left; */
+    padding: 5px;
     text-align: center;
     width: 30%;
-    padding: 10px;
 }
 
 
@@ -173,33 +168,22 @@ header #branding {
     width: 90px;
 }
 
-/* @media {
-    .container-box {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-        width: 80%;
-        margin: auto;
-    }
-    
-    .box {
-        /* float: left;
-        text-align: center;
-        width: 100%;
-        padding: 10px;
-    }
-} */
+/* Styles for the About page */
+.dark {
+    background:#35424a;
+    padding: 15px;
+    color: #fff;
+}
 
-/* Sidebar rulesets */
 #main-col {
     float: left;
-    width: 65%;
+    width: 60%;
 }
 
 #sidebar {
+    margin: 20px 0;
     float: right;
-    width: 30%;
+    width: 35%;
 }
 
 footer {
