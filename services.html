@@ -22,8 +22,8 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="highlight">About</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="highlight">Services</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +32,7 @@
     <section id="newsletter">
         <div class="container">
             <h1>Subscribe to our newsletter</h1>
-            <form>
+            <form id="newsletter-form">
                 <input type="email" placeholder="Enter your email...">
                 <button class="button1" type="submit">Subscribe</button>
             </form>
@@ -63,16 +63,28 @@
             </article>
             <aside class="dark" id="sidebar">
                 <h3>Get A Quote</h3>
-                <form class="quote">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="">
-                        <label for="email">Name</label>
-                        <input type="email">
-                        <label for="name">Name</label>
-                        <input type="">
-                        <button>Send</button>
+                <form class="quote" type="submit">
+                    <div class="container-form">
+                        <label for="name">First name</label>
+                        <input type="text" placeholder="First name" required>
                     </div>
+                    <div class="container-form">
+                        <label for="name">Last name</label>
+                        <input type="text" placeholder="Last name" required>   
+                    </div>
+                    <div class="container-form">
+                        <label for="email" required>E-mail</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="container-form">
+                        <label for="email">Organisation</label>
+                        <input type="text" placeholder="Company/Organisation name" required>
+                    </div>
+                    <div class="container-form">
+                        <label for="name">Enquiry</label>
+                        <textarea type="text" placeholder="Describe your needs/specifications..." rows="5" cols="33" required></textarea>
+                    </div>
+                    <button class="button1">Send</button>
                 </form>
             </aside>
         </div>

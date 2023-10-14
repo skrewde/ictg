@@ -1,10 +1,9 @@
 /* Globals rulesets */
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
-} */
-
+}
 
 body {
     background-color: #f4f4f4;
@@ -13,6 +12,7 @@ body {
     padding: 0;
     line-height: 1.5;
     margin: 0;
+    max-width: 1920px;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -23,16 +23,45 @@ ol[role='list'] {
     padding: 0;
 }
 
-/* Non-global rulesets */
+input {
+    border: none;
+    border-radius: 2.5px;
+    font: inherit;
+    font-size: 12px;
+    height: 25px;
+    margin: 0;
+    padding: 0 5px 0 5px;
+    width: 250px
+}
+
+input:focus {
+    /* outline: none; */
+    outline: 3px solid #e8491d;
+    transition: all 0.25s ease-in-out;
+}
+
 .container {
     margin: auto;
     overflow: hidden;
     width: 80%;           
 }
 
+
+/* Non-global rulesets */
+/* Styling for header */
 nav {
     float: right;
     margin-top: 20px;
+}
+
+header #branding {
+    float:left;
+}
+
+header li {
+    display: inline;
+    float: left;
+    padding: 0 20px 0 20px;
 }
 
 header {
@@ -40,7 +69,7 @@ header {
     border-bottom: #e8491d 3px solid;
     color: #fff;
     min-height: 70px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 header a {
@@ -60,21 +89,12 @@ header a:hover {
     padding: 0;
 } */
 
-header li {
-    display: inline;
-    float: left;
-    padding: 0 20px 0 20px;
-}
-
-header #branding {
-    float:left;
-}
-
 .highlight {
     color: #e8491d;
     font-weight: 800;
 }
 
+/* Styling for showcase area */
 #showcase {
     background: url(../images/sc.jpg) no-repeat -350px -650px;
     color: #fff;
@@ -89,13 +109,14 @@ header #branding {
 }
 
 #showcase p {
-    font-size: 24;
+    font-size: 24px;
 }
 
+/* Styling for newsletter area */
 #newsletter {
     background: #35424a;
     color: #fff;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 #newsletter h1 {
@@ -105,23 +126,6 @@ header #branding {
 #newsletter form {
     float: right;
     margin-top: 25px;
-}
-
-#newsletter input[type="email"] {
-    border: none;
-    border-radius: 2.5px;
-    font: inherit;
-    font-size: 12px;
-    height: 25px;
-    margin: 0 10px;
-    padding: 5px;
-    width: 250px
-}
-
-#newsletter input:focus {
-    /* outline: none; */
-    outline: 3px solid #e8491d;
-    transition: all 0.25s ease-in-out;
 }
 
 .button1 {
@@ -141,38 +145,36 @@ header #branding {
     transition: all 0.25s ease-in-out;
 }
 
+
 /* Styling for the boxes */
+section#boxes {
+    margin-top: 5px;
+}
+
 .container-box {
-    width: 80%;
-    display: flex;
-    margin: auto;
     align-items: center;
+    display: flex;
     justify-content: center;
+    margin: auto;
+    width: 80%;
 }
 
 .box {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     width: 30%;
 }
-
-
-/* Hover animation
-.box:hover {
-    /* transform: translateY(-5px); /* Raise the card by 5 pixels */
-    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); Add a stronger box shadow */
-/* } */
 
 .box img {
     margin-top: 5px;
     width: 90px;
 }
 
-/* Styles for the About page */
+/* Styles for About page */
 .dark {
     background:#35424a;
-    padding: 15px;
     color: #fff;
+    padding: 15px;
 }
 
 #main-col {
@@ -181,15 +183,130 @@ header #branding {
 }
 
 #sidebar {
-    margin: 20px 0;
     float: right;
+    margin: 20px 0;
     width: 35%;
 }
 
+/* Styling for Services page */
+ul#services {
+    margin: 0;
+    padding: 0;
+}
+
+ul#services li {
+    background: #e6e6e6;
+    border: #ccc 1px solid;
+    list-style: none;
+    margin: 0 0 5px 0;
+    padding: 20px;
+    
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    padding: 5px;
+    width: 90%;
+}
+
+aside#sidebar .quote textarea {
+    border: none;
+    border-radius: 2.5px;
+    font: inherit;
+    font-size: 12px;
+}
+
+aside#sidebar .quote textarea:focus {
+    /* outline: none; */
+    outline: 3px solid #e8491d;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Styling for footer */
 footer {
 	background-color: #e8491d;
 	color: #fff;
-	margin-top: 10px;
+	/* margin-top: 5px; */
 	padding: 20px;
 	text-align: center;
+}
+
+/* Meida queries */
+@media (max-width: 870px) {
+    div#branding,
+    form#newsletter-form,
+    #newsletter h1,
+    #boxes,
+    #main-col,
+    #sidebar  {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    div#branding > h1 {
+        margin: 0;
+    }
+
+    nav {
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        margin: 0;
+        width: 100%;
+    }
+
+    nav > ul {
+        padding: 0;
+    }
+
+    #showcase {
+    background: url(../images/sc.jpg) no-repeat -350px -650px;
+    color: #fff;
+    min-height: 450px;
+    text-align: center;
+    }
+
+    #showcase h1 {
+        margin: 5px 0;
+    }
+
+    #showcase p {
+        margin: 0;
+    }
+
+    .container-box {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .container-box > .box {
+        width: 100%;
+    }
+
+    div .container-form {
+        margin: 5px;
+    }
+
+    div .container-form  > input[type="email"],
+    div .container-form  > textarea {
+        display: block;
+        margin: 0 5%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    form#newsletter-form > button,
+    form#newsletter-form > input {
+        margin: 5px;
+        display: block;
+        width: 100%;
+    }
 }
