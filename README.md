@@ -1,2 +1,2 @@
-# ictg-task
+# ictg
 Task assigned by ICTG, LFC
